@@ -46,6 +46,7 @@ google_ad_height = 15;
         feedControl.setNumEntries(7);
         feedControl.addFeed('http://blog.livedoor.jp/dqnplus/atom.xml', '痛いニュース');
         feedControl.addFeed('http://hamusoku.com/atom.xml', 'ハム速');
+        feedControl.addFeed('http://blog.livedoor.jp/kinisoku/atom.xml', 'キニ速');
         feedControl.addFeed('http://lifehack2ch.livedoor.biz/atom.xml', 'lifehack2ch');
         feedControl.addFeed('http://onesoku.com/atom.xml', 'ONE PIECE速報');
         feedControl.addFeed('http://blog.livedoor.jp/itsoku/atom.xml', 'IT速報');
@@ -57,10 +58,8 @@ google_ad_height = 15;
         feedControl.addFeed('http://blog.livedoor.jp/himasoku123/atom.xml', '暇人＼(＾o＾)／速報');
         feedControl.addFeed('http://zch-vip.com/atom.xml', 'Zチャンネル');
         feedControl.addFeed('http://blog.livedoor.jp/rbkyn844/atom.xml', '暇つぶしニュース');
-        feedControl.draw(
-        document.getElementById( 'feedControl' ), {
-            drawMode : google.feeds.FeedControl.DRAW_MODE_TABBED
-        });
+        feedControl.draw(document.getElementById('feedControl'),
+                        {drawMode : google.feeds.FeedControl.DRAW_MODE_TABBED});
     }
     google.setOnLoadCallback( initialize );
 
